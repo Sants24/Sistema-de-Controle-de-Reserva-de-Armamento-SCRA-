@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
+    padding: 20px;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+  flex-direction: column;
+  padding-top: 160px;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1a2b2b;
+  color: #f2f2f2;
+  z-index: 1000;
+  padding: 20px 10px;
+  text-align: center;
+  border-bottom: 3px solid #2d4d4d;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.logo-exercito{
+    float: right;
+    position: fixed;
+    top: -80px;
+    right: 10px;
+}
+
+.logo-exercito img{
+    height: 230px;
+}
+
+header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+ h2{
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+nav ul li a {
+  color: #cce0dd;
+  text-decoration: none;
+  background-color: #2d4d4d;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.ativo {
+  background-color: #447878;
+  color: #fff;
+}
+
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+section {
+  flex: 3;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 8px;
+}
+
+aside {
+  flex: 1;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid #333;
+}
+
+th {
+  background-color: #2d4d4d;
+  color: #fff;
+  padding: 8px;
+}
+
+td {
+  padding: 8px;
+  color: #e0e0e0;
+}
+
+
+footer {
+  background-color: #1a2b2b;
+  color: #ccc;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+  border-top: 3px solid #2d4d4d;
+  width: 100%;
+  bottom: 0;
+}
+
+
+@media (max-width: 768px) {
+  div {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+form fieldset {
+  border: 2px solid var(#1a2b2b);
+  border-radius: 50px;
+  padding: 20px;
+  margin-bottom: 50px;
+  background-color: #1f1f1f; 
+  color: var(#121212);
+  box-shadow: 0 2px 8px rgba(2, 187, 255, 0.3);
+}
