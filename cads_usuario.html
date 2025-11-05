@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Cadastro de Usuários - SCRA - 1º Cia</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stile.css"> 
+</head>
+<body>
+    <header>
+         <div class="logo-exercito">
+         <img src="brasao.png" alt="Brasão" class="logo-direita">  
+        </div>
+        <h1>Sistema de Controle de Reserva de Armamento (SCRA) - 1º Cia</h1>
+        <nav>
+            <ul>
+                <li><a href="reservaArmt.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="reg_cautela.html">Registrar Cautela</a></li>
+                <li><a href="reg_devolucao.html">Registrar Devolução</a></li>
+                <li><a href="cads_usuario.html">Cadastro de Usuários</a></li>
+                <li><a href="#">Relatórios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Cadastro de Novo Usuário</h2>
+        <form method="post" action="#">
+            <fieldset>
+            <p>
+                <label for="nome">Nome do Usuário:</label><br>
+                <input type="text" id="nome" name="nome" required>
+            </p>
+
+            <p>
+                <label for="login">Login:</label><br>
+                <input type="text" id="login" name="login" required>
+            </p>
+
+            <p>
+                <label for="senha">Senha:</label><br>
+                <input type="password" id="senha" name="senha" required>
+            </p>
+
+            <p>
+                <label for="perfil">Perfil:</label><br>
+                <select id="perfil" name="perfil">
+                    <option value="admin">Administrador</option>
+                    <option value="usuario">Usuário Comum</option>
+                </select>
+            </p>
+
+            <p>
+                <input type="submit" value="Cadastrar Usuário">
+                <input type="reset" value="Limpar Campos">
+            </p>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>2025. Exército Brasileiro. Ministério da Defesa<br>
+        Criado por Isaque Gomes. Programação Web© Livre Acesso.</p>
+    </footer>
+</body>
+</html>
