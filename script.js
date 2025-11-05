@@ -24,11 +24,10 @@ function atualizarRelogio() {
 setInterval(atualizarRelogio, 1000);
 atualizarRelogio();
 
-// === Alternar Tema Claro/Escuro ===
+// Alternar Tema Claro/Escuro 
 const botaoTema = document.getElementById('toggleTema');
 
 if (botaoTema) {
-  // Aplica o tema salvo anteriormente (caso o usuário já tenha escolhido)
   const temaSalvo = localStorage.getItem('tema');
   if (temaSalvo === 'claro') {
     document.body.classList.add('light-mode');
@@ -39,10 +38,10 @@ if (botaoTema) {
     document.body.classList.toggle('light-mode');
     const modoClaro = document.body.classList.contains('light-mode');
 
-    // Altera o ícone
+
     botaoTema.textContent = modoClaro ? '🌞' : '🌙';
 
-    // Salva a preferência no navegador
+
     localStorage.setItem('tema', modoClaro ? 'claro' : 'escuro');
   });
 }
