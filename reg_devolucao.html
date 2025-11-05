@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Recebimento de Devolução - SCRA - 1º Cia</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stile.css"> 
+</head>
+<body>
+    <header>
+         <div class="logo-exercito">
+         <img src="brasao.png" alt="Brasão" class="logo-direita">  
+        </div>
+        <h1>Sistema de Controle de Reserva de Armamento (SCRA) - 1º Cia</h1>
+        <nav>
+            <ul>
+                <li><a href="reservaArmt.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="reg_cautela.html">Registrar Cautela</a></li>
+                <li><a href="reg_devolucao.html">Registrar Devolução</a></li>
+                <li><a href="cads_usuario.html">Cadastro de Usuários</a></li>
+                <li><a href="#">Relatórios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Recebimento de Devolução de Armamento</h2>
+        
+        <form method="post" action="#">
+            <fieldset>
+            <p>
+                <label for="num_cautela">Número da Cautela:</label><br>
+                <input type="text" id="num_cautela" name="num_cautela" required>
+            </p>
+
+            <p>
+                <label for="nome_militar">Nome do Militar:</label><br>
+                <input type="text" id="nome_militar" name="nome_militar" required>
+            </p>
+
+            <p>
+                <label for="armamento">Armamentos a Devolver:</label><br>
+                <textarea id="armamento" name="armamento" rows="4" cols="40" placeholder="Ex: Pistola - Nº Série 12345, Fuzil - Nº Série 67890"></textarea>
+            </p>
+
+            <p>
+                <label for="condicao">Condição dos Armamentos:</label><br>
+                <select id="condicao" name="condicao">
+                    <option value="bom">Bom</option>
+                    <option value="manutencao">Precisa de Manutenção</option>
+                    <option value="danificado">Danificado</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="data_hora">Data e Hora da Devolução:</label><br>
+                <input type="datetime-local" id="data_hora" name="data_hora" required>
+            </p>
+
+            <p>
+                <label for="responsavel">Responsável pelo Recebimento:</label><br>
+                <input type="text" id="responsavel" name="responsavel" value="Usuário Logado" readonly>
+            </p>
+
+            <p>
+                <input type="submit" value="Confirmar Devolução">
+                <input type="reset" value="Limpar Campos">
+            </p>
+         </fieldset>   
+        </form>
+    </main>
+
+    <footer>
+        <p>2025. Exército Brasileiro. Ministério da Defesa<br>
+        Criado por Isaque Gomes. Programação Web</p>
+    </footer>
+</body>
+</html>
