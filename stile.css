@@ -25,8 +25,6 @@ body {
   padding-top: 300px; 
 }
 
-
-/* ===== HEADER ===== */
 header {
   position: fixed;
   top: 0;
@@ -41,7 +39,7 @@ header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* ===== LOGO ===== */
+
 .logo-exercito {
   position: fixed;
   top: -80px;
@@ -52,7 +50,6 @@ header {
   height: 230px;
 }
 
-/* ===== TOPO ===== */
 .topo {
   position: relative;
   display: flex;
@@ -61,7 +58,6 @@ header {
   justify-content: center;
 }
 
-/* Botão de tema centralizado no topo */
 #toggleTema {
   position: absolute;
   top: -10px;
@@ -82,7 +78,7 @@ header {
   background-color: #2d4d4d;
 }
 
-/* Relógio abaixo do título */
+
 #relogio {
   margin-top: 10px;
   font-size: 1.1em;
@@ -90,7 +86,7 @@ header {
   font-weight: bold;
 }
 
-/* ===== TÍTULOS ===== */
+
 header h1 {
   font-size: 24px;
   margin-top: 30px;
@@ -103,7 +99,7 @@ h2 {
   text-align: center;
 }
 
-/* ===== NAVEGAÇÃO ===== */
+
 nav ul {
   list-style: none;
   display: flex;
@@ -129,7 +125,7 @@ nav ul li a.ativo {
   color: #fff;
 }
 
-/* ===== CONTEÚDO ===== */
+
 div {
   display: flex;
   flex-wrap: wrap;
@@ -174,7 +170,7 @@ td {
   color: #e0e0e0;
 }
 
-/* ===== FOOTER ===== */
+
 footer {
   background-color: #1a2b2b;
   color: #ccc;
@@ -186,7 +182,7 @@ footer {
   bottom: 0;
 }
 
-/* ===== RESPONSIVIDADE ===== */
+
 @media (max-width: 768px) {
   div {
     flex-direction: column;
@@ -207,7 +203,7 @@ footer {
   }
 }
 
-/* ===== FORM ===== */
+
 form fieldset {
   border: 2px solid #1a2b2b;
   border-radius: 50px;
@@ -218,7 +214,7 @@ form fieldset {
   box-shadow: 0 2px 8px rgba(2, 187, 255, 0.3);
 }
 
-/* ===== TEMA CLARO ===== */
+/*  TEMA CLARO  */
 .light-mode {
   background-color: #f4f4f4;
   color: #222;
