@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Home - SCRA - 1º Cia</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stile.css"> 
+</head>
+<body>
+    <header>
+        <div class="topo">
+            <div class="logo-exercito">
+                <img src="brasao.png" alt="Brasão" class="logo-direita">
+            </div>
+            <div id="relogio"></div>
+            <button id="toggleTema">🌙</button>
+        </div>
+        <h1>Sistema de Controle de Reserva de Armamento (SCRA) - 1º Cia</h1>
+        <nav>
+            <ul>
+                <li><a href="reservaArmt.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="reg_cautela.html">Registrar Cautela</a></li>
+                <li><a href="reg_devolucao.html">Registrar Devolução</a></li>
+                <li><a href="cads_usuario.html">Cadastro de Usuários</a></li>
+                <!-- <li><a href="#">Relatórios</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="h2">
+            <h2>Visão Geral do Sistema</h2>
+        </div>
+
+        <section>
+            <h3>Cautelas Ativas</h3>
+            <table border="1">
+                <tr>
+                    <th>Nº Cautela</th>
+                    <th>Militar</th>
+                    <th>Armamento</th>
+                    <th>Data Cautela</th>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3>Armamentos Disponíveis</h3>
+            <ul>
+                <li>Fuzil 5.56 - Nº 54321</li>
+                <li>Pistola .40 - Nº 98765</li>
+                <li>Metralhadora 7.62 - Nº 11223</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Pendências / Atrasos de Devolução</h3>
+            <table border="1">
+                <tr>
+                    <th>Militar</th>
+                    <th>Armamento</th>
+                    <th>Data Prevista Devolução</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+   <footer>
+        <p>2025. Exército Brasileiro<br>
+        Criado por Isaque Gomes</p>
+    </footer>
+</body>
+</html>
